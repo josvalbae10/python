@@ -1,0 +1,6 @@
+start_date: 2017-01-15 00:00:00Z
+end_date: 2017-01-20 00:00:00Z
+name: Matter attachment to non-corporate domain
+anomaly_id: 3
+description: A matter file was sent to a non-corporate domain (e.g. gmail.com)
+count: 100
