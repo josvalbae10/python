@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190425 00:44:12.646" generator="Robot 3.1.1 (Python 2.7.15rc1 on linux2)">
+<suite source="/home/josevalverde/github/experiments/visualregression-roboteyes/VisualTest.robot" id="s1" name="VisualTest">
+<test id="s1-t1" name="1. Visual test">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190425 00:44:13.125" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" endtime="20190425 00:44:15.031" starttime="20190425 00:44:13.125"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190425 00:44:15.137" starttime="20190425 00:44:15.032"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=.gLFyf.gsfi</arg>
+</arguments>
+<status status="PASS" endtime="20190425 00:44:15.170" starttime="20190425 00:44:15.137"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>css=.gLFyf.gsfi</arg>
+</arguments>
+<msg timestamp="20190425 00:44:15.171" level="INFO">Clicking element 'css=.gLFyf.gsfi'.</msg>
+<status status="PASS" endtime="20190425 00:44:15.223" starttime="20190425 00:44:15.171"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>css=.gLFyf.gsfi</arg>
+<arg>example</arg>
+</arguments>
+<msg timestamp="20190425 00:44:15.223" level="INFO">Typing text 'example' into text field 'css=.gLFyf.gsfi'.</msg>
+<status status="PASS" endtime="20190425 00:44:15.345" starttime="20190425 00:44:15.223"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20190425 00:44:20.346" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" endtime="20190425 00:44:20.346" starttime="20190425 00:44:15.346"></status>
+</kw>
+<kw name="Open Eyes" library="RobotEyes">
+<status status="PASS" endtime="20190425 00:44:20.347" starttime="20190425 00:44:20.346"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>id=hplogo</arg>
+</arguments>
+<status status="PASS" endtime="20190425 00:44:20.372" starttime="20190425 00:44:20.347"></status>
+</kw>
+<kw name="Capture Full Screen" library="RobotEyes">
+<status status="PASS" endtime="20190425 00:44:20.496" starttime="20190425 00:44:20.373"></status>
+</kw>
+<kw name="Compare Images" library="RobotEyes">
+<kw name="Fail" library="BuiltIn">
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<arguments>
+<arg>Image dissimilarity exceeds tolerance</arg>
+</arguments>
+<msg timestamp="20190425 00:44:20.838" level="FAIL">Image dissimilarity exceeds tolerance</msg>
+<status status="FAIL" endtime="20190425 00:44:20.838" starttime="20190425 00:44:20.837"></status>
+</kw>
+<msg timestamp="20190425 00:44:20.838" level="INFO">5526.04 (0.0843219) @ 0,0</msg>
+<status status="FAIL" endtime="20190425 00:44:20.839" starttime="20190425 00:44:20.496"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190425 00:44:20.897" starttime="20190425 00:44:20.839"></status>
+</kw>
+<status status="FAIL" endtime="20190425 00:44:20.897" critical="yes" starttime="20190425 00:44:13.124">Image dissimilarity exceeds tolerance</status>
+</test>
+<test id="s1-t2" name="2. visual test marca.com">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.marca.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190425 00:44:20.898" level="INFO">Opening browser 'chrome' to base url 'https://www.marca.com/'.</msg>
+<status status="PASS" endtime="20190425 00:44:25.404" starttime="20190425 00:44:20.898"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190425 00:44:25.616" starttime="20190425 00:44:25.405"></status>
+</kw>
+<kw name="Open Eyes" library="RobotEyes">
+<status status="PASS" endtime="20190425 00:44:25.617" starttime="20190425 00:44:25.616"></status>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element ``locator`` is visible.</doc>
+<arguments>
+<arg>css=.tools-header</arg>
+</arguments>
+<status status="PASS" endtime="20190425 00:44:25.650" starttime="20190425 00:44:25.617"></status>
+</kw>
+<kw name="Capture Full Screen" library="RobotEyes">
+<status status="PASS" endtime="20190425 00:44:25.881" starttime="20190425 00:44:25.650"></status>
+</kw>
+<kw name="Compare Images" library="RobotEyes">
+<msg timestamp="20190425 00:44:26.560" level="INFO">1442.4 (0.0220097) @ 0,0</msg>
+<status status="PASS" endtime="20190425 00:44:26.560" starttime="20190425 00:44:25.881"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190425 00:44:26.621" starttime="20190425 00:44:26.561"></status>
+</kw>
+<status status="PASS" endtime="20190425 00:44:26.621" critical="yes" starttime="20190425 00:44:20.898"></status>
+</test>
+<status status="FAIL" endtime="20190425 00:44:26.622" starttime="20190425 00:44:12.646"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="VisualTest" pass="1">VisualTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
