@@ -1,7 +1,7 @@
 *** Settings ***
 Library  Selenium2Library
-#Library  RobotEyes  baseline  0.01
-Library  RobotEyes  test  0.05
+Library  RobotEyes  baseline  0.01
+#Library  RobotEyes  test  0.05
 
 Test Teardown  Close All Browsers
 

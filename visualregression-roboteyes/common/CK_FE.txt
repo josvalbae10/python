@@ -1,0 +1,19 @@
+*** Settings ***
+Library  WebAutomation1
+
+*** Keywords ***
+I am logged in as an admin
+  I am on the login page
+  I login with admin credentials
+
+I am on the login page
+  Open Browser    https://10.30.3.55/detect-server/    chrome
+  Maximize Browser Window
+  Wait Until Page Contains Element  name=email
+  Wait Until Page Contains Element  name=password
+  Wait Until Page Contains Element  id=login
+
+I login with admin credentials
+#  WebAutomation1.test
+  try_to_login
+  Wait until page contains element  id=main-menu  60s
